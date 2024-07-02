@@ -1,0 +1,15 @@
+{
+  "name": "learning-websites-dev",
+  "version": "1.0.0",
+  "description": "Packages I used to learn node.js and foundational website development",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon --env-file=.env server.js"
+  },
+  "author": "Kyle Dhauke",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
