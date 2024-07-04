@@ -1,4 +1,11 @@
 import './globals.css'
+import type { Metadata } from 'next'
+
+
+export const metadata:Metadata = {
+  title: 'Home',
+  description: 'Welcome to Home',  
+}
 
 export default function RootLayout({
   children,
