@@ -7,13 +7,11 @@ export const metadata: Metadata = {
   title: 'Users'
 }
 
-
-
 export default async function UsersPage() {
   const usersData:Promise<User[]> = getAllUsers();
   const users = await usersData
 
-  console.log('Hello')
+  // console.log('Hello')
 
   const content = (
     <section>
@@ -23,12 +21,12 @@ export default async function UsersPage() {
       <br />
       {users.map(user => {
         return (
-          <>
-            <p key={user.id}>
+          <React.Fragment key={user.id}>
+            <p>
               <Link href={`/users/${user.id}`}>{user.name}</Link>
             </p>
             <br />
-          </>
+          </React.Fragment>
         )
       })}
     </section>
