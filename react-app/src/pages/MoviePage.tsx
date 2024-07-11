@@ -28,6 +28,8 @@ export const MoviePage = () => {
     setMovies(data.Search);
   }
 
+  // This is used to immediately fetch an empty list of movies the first time
+  // the MovesPage.tsx renders. Otherwise, it serves no additional purpose. 
   useEffect(() => {
     searchMovies('');
   }, [])
